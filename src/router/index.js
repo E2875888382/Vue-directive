@@ -11,14 +11,24 @@ const routes = [
         component: Permission
     },
     {
-        path: '/about',
-        name: 'About',
-        component: () => import('../views/About.vue')
-    },
-    {
         path: '/visible',
         name: 'visible',
         component: () => import('../views/Visible.vue')
+    },
+    {
+        path: '/permission',
+        name: 'permission',
+        component: () => import('../views/Permission.vue')
+    },
+    {
+        path: '/copy',
+        name: 'copy',
+        component: () => import('../views/Copy.vue')
+    },
+    {
+        path: '/focus',
+        name: 'focus',
+        component: () => import('../views/Focus.vue')
     }
 ]
 

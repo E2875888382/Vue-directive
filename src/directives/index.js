@@ -1,10 +1,13 @@
-import permission from '../directives/permission/permission';
-import permissionCheck from '../directives/permission/permissionCheck';
-import visible from '../directives/Visible/visible';
+import permission from '../directives/permission';
+import visible from '../directives/visible';
+import copy from '../directives/copy';
+import focus from '../directives/focus';
 
 const directives = {
-    permission: permission(permissionCheck),
-    visible
+    permission,
+    visible,
+    copy,
+    focus
 };
 
 export const customDirectives = {

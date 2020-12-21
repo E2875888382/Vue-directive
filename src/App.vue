@@ -1,9 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">v-permission</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/visible">v-visible</router-link>
+      <router-link to="/permission">v-permission</router-link> |
+      <router-link to="/visible">v-visible</router-link> |
+      <router-link to="/copy">v-copy</router-link> | 
+      <router-link to="/focus">v-focus</router-link>
     </div>
     <router-view />
   </div>

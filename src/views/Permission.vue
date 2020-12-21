@@ -1,6 +1,9 @@
 <template>
     <div class="home">
-        <p v-for="user in users" :key="user.id" v-permission="user.role">
+        <!-- 传参 -->
+        <!-- <p v-for="user in users" :key="user.id" v-permission="permissionCheck(user.role)"> -->
+        <!-- 不带参数 -->
+        <p v-for="user in users" :key="user.id" v-permission="permissionCheckWithoutParams">
             {{ user.name }}
         </p>
     </div>
@@ -25,10 +28,20 @@ export default {
                 {
                     id: 2,
                     name: "jack",
-                    role: 2,
+                    role: 3,
                 },
             ]
         };
+    },
+    methods: {
+        permissionCheck(key) {
+            const permissions = [0, 1];
+
+            return permissions.indexOf(key) > -1;
+        },
+        permissionCheckWithoutParams() {
+            return true;
+        }
     }
 };
 </script>

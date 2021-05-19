@@ -1,4 +1,4 @@
-# vue-directive （Vue自定义指令集）
+# vue-directive （Vue2.0自定义指令集）
 
 | name | desc | value |
 | - | - | - |
